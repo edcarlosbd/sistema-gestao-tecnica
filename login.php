@@ -8,11 +8,15 @@
     $msg_error = "";
 
     if(isset ($_POST["loginUser"]) && ($_POST["senhaUser"])){
-        $loginUser = mysqli_escape_string($conexao, $_POST["loginUser"]);
+        $loginUser = $_POST["loginUser"];
         $senhaUser = hash('sha256', $_POST["senhaUser"]);
 
-        $sql = "SELECT * FROM tbusuarios WHERE loginUser = '{$loginUser}' AND senhaUser = '{$senhaUser}'";
-        $rs = mysqli_query($conexao, $sql);
+        // CORRIGIDO: Usando Prepared Statement para evitar SQL Injection
+        $sql = "SELECT * FROM tbusuarios WHERE loginUser = ? AND senhaUser = ?";
+        $stmt = mysqli_prepare($conexao, $sql);
+        mysqli_stmt_bind_param($stmt, "ss", $loginUser, $senhaUser);
+        mysqli_stmt_execute($stmt);
+        $rs = mysqli_stmt_get_result($stmt);
         $dados = mysqli_fetch_assoc($rs);
         $linha = mysqli_num_rows($rs);
 
@@ -32,6 +36,8 @@
                         ";
 
         }
+        
+        mysqli_stmt_close($stmt);
     }
 
 ?>
