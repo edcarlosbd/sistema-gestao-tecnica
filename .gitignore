@@ -1,25 +1,72 @@
-# Arquivos de configuração sensíveis
-db/conexao.php
+# Environment files
+.env
+.env.local
+.env.*.local
 
-# Arquivos de upload
-uploads/*
-!uploads/.gitkeep
+# Database config (uncomment if you want to keep it private)
+# db/config.php
 
-# Logs
-*.log
+# Upload files - keep structure but ignore uploads
+paginas/contatos/upload/*.jpg
+paginas/contatos/upload/*.png
+paginas/contatos/upload/*.gif
+paginas/contatos/upload/*.jpeg
+paginas/contatos/upload/*.webp
+!paginas/contatos/upload/.gitkeep
 
-# Arquivos do sistema
-.DS_Store
-Thumbs.db
-desktop.ini
+# Dependencies
+vendor/
+node_modules/
+composer.lock
+package-lock.json
 
-# Arquivos temporários
-*.tmp
-*.temp
-*~
-
-# IDEs
+# IDE and editors
 .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
+*.code-workspace
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+error.log
+access.log
+debug.log
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.bak
+*.cache
+
+# Sensitive data and backups
+backup/
+*.sql
+*.db
+*.sqlite
+*.dump
+
+# PHP specific
+*.phpunit.result.cache
+.phpunit.cache/
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
