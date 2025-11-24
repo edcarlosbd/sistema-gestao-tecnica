@@ -1,6 +1,6 @@
-# 📋 Sistema Agendador de Contatos
+# 📋 SISTEMA WEB DE APOIO À GESTÃO DE SERVIÇOS TÉCNICOS
 
-Sistema de gerenciamento de contatos desenvolvido como Trabalho de Conclusão de Curso (TCC), com funcionalidades de cadastro, edição, exclusão e favoritos.
+Sistema WEB para gerenciamento de chamados, tarefas, equipamentos e contatos desenvolvido como Trabalho de Conclusão de Curso (TCC), com funcionalidades de cadastro, edição, exclusão e favoritos.
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -12,9 +12,8 @@ Sistema de gerenciamento de contatos desenvolvido como Trabalho de Conclusão de
 
 ## ✨ Funcionalidades
 
-- ✅ Cadastro de contatos com foto
-- ✅ Edição e exclusão de contatos
-- ✅ Sistema de favoritos
+- ✅ Cadastros
+- ✅ Edição e exclusão
 - ✅ Busca e filtros
 - ✅ Interface responsiva
 - ✅ Sistema de login seguro
@@ -129,7 +128,7 @@ Este projeto foi desenvolvido como Trabalho de Conclusão de Curso (TCC).
 
 ## 👨‍💻 Autor
 
-**Eduardo Carlos**
+**Ed Carlos**
 - GitHub: [@edcarlosbd](https://github.com/edcarlosbd)
 
 ---
