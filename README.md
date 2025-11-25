@@ -132,5 +132,3 @@ Este projeto foi desenvolvido como Trabalho de Conclusão de Curso (TCC).
 - GitHub: [@edcarlosbd](https://github.com/edcarlosbd)
 
 ---
-
-⭐ Se este projeto te ajudou, considere dar uma estrela!
